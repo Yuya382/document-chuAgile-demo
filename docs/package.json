@@ -1,0 +1,14 @@
+{
+  "name": "document-chu-agile-demo",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "devDependencies": {
+    "markdown-it-multimd-table": "^4.2.0",
+    "vuepress": "^1.9.7"
+  }
+}
