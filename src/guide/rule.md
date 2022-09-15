@@ -51,6 +51,17 @@ meta:
 
 ### ラベル
 ### 図解記法
+
+
+
+```mermaidjs
+sequenceDiagram
+  Alice->John: Hello John, how are you?
+  loop Every minute
+    John-->Alice: Great!
+  end
+```
+
 ### 数式記法
 ### vue独特の記法の利用
 
@@ -68,7 +79,6 @@ $page.title: {{ $frontmatter.title }}
 $page.lang: {{ $lang }}
 
 $page.meta: {{ $frontmatter.meta[0].last_edit_name }}
-
 
 
 

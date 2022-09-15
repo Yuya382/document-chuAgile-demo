@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "markdown-it-multimd-table": "^4.2.0",
-    "vuepress": "^1.9.7"
+    "vuepress": "^1.9.7",
+    "@renovamen/vuepress-plugin-mermaid": "^0.3.0"
   }
 }
