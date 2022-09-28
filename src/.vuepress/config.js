@@ -29,7 +29,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
+    repo: 'https://github.com/Yuya382/document-chuAgile-demo.git',
     editLinks: false,
     search: false,
     docsDir: '',
