@@ -42,15 +42,29 @@ module.exports = {
       },
       {
         //ヘッダーのページング
-        text: 'Config',
-        link: '/config/'
+        text: 'アプリ設計書',
+        link: '/AppDesign/',
       },
       {
-        //外部サイトへのリンク
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
-      }
-      ,
+        //ヘッダーのページング
+        text: '画面デザイン',
+        link: '/UIDesign/',
+      },
+      {
+        //ヘッダーのページング
+        text: '用語集',
+        link: '/terminology/'
+      },
+      {
+        //ヘッダーのページング
+        text: 'ログ設計書',
+        link: '/Log/',
+      },
+      {
+        //ヘッダーのページング
+        text: 'QA',
+        link: '/QA/',
+      },
       {
         //外部サイトへのリンク
         text: 'Repository',
@@ -62,22 +76,75 @@ module.exports = {
       //pathがガイドの時は
       '/guide/': [
         {
-          title: 'Guide',//タイトル欄に「Guide」とだす
-          collapsable: true,//True＝dropDownでまとめられる
+          title: '',//タイトル欄に「Guide」とだす
+          collapsable: false,//True＝dropDownでまとめられる
           children: [
-            '',//空白でREADMEを参照
-            'using-vue'
+            '',
           ]
-        }
-        ,
+        },
         {
-          title: 'Rule',//タイトル欄に「Guide」とだす
+          title: '環境構築',
+          collapsable: false,//True＝dropDownでまとめられる
+          children: [
+            'setting/setting-windows',
+            'setting/setting-mac',
+          ]
+        },
+        {
+          title: 'ルール',
           collapsable: false,
           children: [
-            'rule'
+            'rules/commit-rule',
+            'rules/edit-rule',
           ]
         }
       ],
+      '/terminology/': [
+        {
+          title: '',
+          collapsable: false,//True＝dropDownでまとめられる
+          children: [
+            ''
+          ]
+        },
+      ],
+      '/AppDesign/': [
+        {
+          title: '',
+          collapsable: false,//True＝dropDownでまとめられる
+          children: [
+            ''
+          ]
+        },
+      ],
+      '/UIDesign/': [
+        {
+          title: '',
+          collapsable: false,//True＝dropDownでまとめられる
+          children: [
+            ''
+          ]
+        },
+      ],
+      '/QA/': [
+        {
+          title: '',
+          collapsable: false,//True＝dropDownでまとめられる
+          children: [
+            ''
+          ]
+        },
+      ],
+      '/Log/': [
+        {
+          title: '',
+          collapsable: false,//True＝dropDownでまとめられる
+          children: [
+            'BigQuery-TableDesign',
+            'BigQuery-SQLSample'
+          ]
+        },
+      ]
     }
   },
 

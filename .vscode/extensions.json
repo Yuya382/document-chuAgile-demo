@@ -3,6 +3,8 @@
         "bierner.markdown-mermaid",
         "esbenp.prettier-vscode",
         "streetsidesoftware.code-spell-checker",
-        "bpruitt-goddard.mermaid-markdown-syntax-highlighting"
+        "bpruitt-goddard.mermaid-markdown-syntax-highlighting",
+        "pizzacat83.codic",
+        "csholmq.excel-to-markdown-table"
     ]
 }
