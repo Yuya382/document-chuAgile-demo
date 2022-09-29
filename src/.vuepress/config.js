@@ -22,7 +22,7 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
   dest: 'docs/',
-  base: './',
+  base: '/document-chuAgile-demo/',
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
    *
@@ -32,50 +32,45 @@ module.exports = {
     repo: 'https://github.com/Yuya382/document-chuAgile-demo.git',
     editLinks: false,
     search: false,
-    docsDir: '',
+    docsDir: '.',
     editLinkText: '',
     lastUpdated: false,
     nav: [
       {
         //ヘッダーのページング
         text: 'Guide',
-        link: '/guide/',
+        link: 'guide/',
       },
       {
         //ヘッダーのページング
         text: 'アプリ設計書',
-        link: '/AppDesign/',
+        link: 'AppDesign/',
       },
       {
         //ヘッダーのページング
         text: '画面デザイン',
-        link: '/UIDesign/',
+        link: 'UIDesign/',
       },
       {
         //ヘッダーのページング
         text: '用語集',
-        link: '/terminology/'
+        link: 'terminology/'
       },
       {
         //ヘッダーのページング
         text: 'ログ設計書',
-        link: '/Log/',
+        link: 'Log/',
       },
       {
         //ヘッダーのページング
         text: 'QA',
-        link: '/QA/',
-      },
-      {
-        //外部サイトへのリンク
-        text: 'Repository',
-        link: 'https://github.com/Yuya382/document-chuAgile-demo'
+        link: 'QA/',
       }
     ],
     //sideBarの設定
     sidebar: {
       //pathがガイドの時は
-      '/guide/': [
+      'guide': [
         {
           title: '',//タイトル欄に「Guide」とだす
           collapsable: false,//True＝dropDownでまとめられる
@@ -100,7 +95,7 @@ module.exports = {
           ]
         }
       ],
-      '/terminology/': [
+      'terminology/': [
         {
           title: '',
           collapsable: false,//True＝dropDownでまとめられる
@@ -109,7 +104,7 @@ module.exports = {
           ]
         },
       ],
-      '/AppDesign/': [
+      'AppDesign/': [
         {
           title: '',
           collapsable: false,//True＝dropDownでまとめられる
@@ -118,7 +113,7 @@ module.exports = {
           ]
         },
       ],
-      '/UIDesign/': [
+      'UIDesign/': [
         {
           title: '',
           collapsable: false,//True＝dropDownでまとめられる
@@ -127,7 +122,7 @@ module.exports = {
           ]
         },
       ],
-      '/QA/': [
+      'QA/': [
         {
           title: '',
           collapsable: false,//True＝dropDownでまとめられる
@@ -136,7 +131,7 @@ module.exports = {
           ]
         },
       ],
-      '/Log/': [
+      'Log/': [
         {
           title: '',
           collapsable: false,//True＝dropDownでまとめられる
