@@ -39,32 +39,32 @@ module.exports = {
       {
         //ヘッダーのページング
         text: 'Guide',
-        link: 'guide/',
+        link: '/guide/',
       },
       {
         //ヘッダーのページング
         text: 'アプリ設計書',
-        link: 'AppDesign/',
+        link: '/AppDesign/',
       },
       {
         //ヘッダーのページング
         text: '画面デザイン',
-        link: 'UIDesign/',
+        link: '/UIDesign/',
       },
       {
         //ヘッダーのページング
         text: '用語集',
-        link: 'terminology/'
+        link: '/terminology/'
       },
       {
         //ヘッダーのページング
         text: 'ログ設計書',
-        link: 'Log/',
+        link: '/Log/',
       },
       {
         //ヘッダーのページング
         text: 'QA',
-        link: 'QA/',
+        link: '/QA/',
       }
     ],
     //sideBarの設定
