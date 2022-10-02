@@ -1,5 +1,7 @@
 # Introduction
 
+<EditMetaInfo/>
+
 サイトの全体設計を表します
 
 ## Directory Structure

@@ -6,11 +6,7 @@ meta:
     - last_edit_date : 2022/09/28
 ---
 # 編集ルール
-
-|            |                                           |
-| ---------- | :---------------------------------------: |
-| 最終編集日 | {{ $frontmatter.meta[1].last_edit_date }} |
-| 最終更新者 | {{ $frontmatter.meta[0].last_edit_name }} |
+<EditMetaInfo/>
 
 
 基本的な記載方法はMarkdownの記載と一緒です。

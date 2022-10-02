@@ -166,6 +166,11 @@ module.exports = {
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
     '@renovamen/vuepress-plugin-mermaid',
+    '@vuepress/last-updated',
+    'git-log', {
+      additionalArgs: '--no-merge',
+      onlyFirstAndLastCommit: true,
+    },
   ],
 
   /**
