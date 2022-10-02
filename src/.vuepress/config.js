@@ -22,7 +22,7 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
   dest: 'docs/',
-  base: '',
+  base: 'document-chuAgile-demo',
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
    *
@@ -32,9 +32,9 @@ module.exports = {
     repo: 'https://github.com/Yuya382/document-chuAgile-demo.git',
     editLinks: false,
     search: false,
-    docsDir: '.',
+    docsDir: '',
     editLinkText: '',
-    lastUpdated: false,
+    lastUpdated: true,
     nav: [
       {
         //ヘッダーのページング
@@ -70,7 +70,7 @@ module.exports = {
     //sideBarの設定
     sidebar: {
       //pathがガイドの時は
-      'guide': [
+      '/guide/': [
         {
           title: '',//タイトル欄に「Guide」とだす
           collapsable: false,//True＝dropDownでまとめられる
@@ -95,7 +95,7 @@ module.exports = {
           ]
         }
       ],
-      'terminology/': [
+      '/terminology/': [
         {
           title: '',
           collapsable: false,//True＝dropDownでまとめられる
@@ -104,7 +104,7 @@ module.exports = {
           ]
         },
       ],
-      'AppDesign/': [
+      '/AppDesign/': [
         {
           title: '',
           collapsable: false,//True＝dropDownでまとめられる
@@ -113,7 +113,7 @@ module.exports = {
           ]
         },
       ],
-      'UIDesign/': [
+      '/UIDesign/': [
         {
           title: '',
           collapsable: false,//True＝dropDownでまとめられる
@@ -122,7 +122,7 @@ module.exports = {
           ]
         },
       ],
-      'QA/': [
+      '/QA/': [
         {
           title: '',
           collapsable: false,//True＝dropDownでまとめられる
@@ -131,7 +131,7 @@ module.exports = {
           ]
         },
       ],
-      'Log/': [
+      '/Log/': [
         {
           title: '',
           collapsable: false,//True＝dropDownでまとめられる
