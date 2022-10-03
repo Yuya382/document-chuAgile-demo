@@ -45,10 +45,10 @@ module.exports = {
    */
   themeConfig: {
     repo: 'https://github.com/Yuya382/document-chuAgile-demo.git',
-    editLinks: false,
     search: false,
-    docsDir: '',
-    editLinkText: '',
+    editLinks: true, // footerにページ編集用リンクをつける
+    editLinkText: 'このページをgithubで編集',// 編集用リンクのテキスト
+    docsBranch: 'main', // 編集リンクの遷移先ブランチ
     lastUpdated: true,
     nav: [
       {
@@ -78,8 +78,8 @@ module.exports = {
       },
       {
         //ヘッダーのページング
-        text: 'QA',
-        link: '/QA/',
+        text: 'About',
+        link: '/About/',
       }
     ],
     //sideBarの設定
@@ -97,8 +97,9 @@ module.exports = {
           title: '環境構築',
           collapsable: false,//True＝dropDownでまとめられる
           children: [
-            'setting/setting-windows',
-            'setting/setting-mac',
+            'setting/environment',
+            'setting/windows',
+            'setting/mac',
           ]
         },
         {
@@ -137,12 +138,13 @@ module.exports = {
           ]
         },
       ],
-      '/QA/': [
+      '/About/': [
         {
           title: '',
           collapsable: false,//True＝dropDownでまとめられる
           children: [
-            ''
+            'about',
+            'release-note',
           ]
         },
       ],

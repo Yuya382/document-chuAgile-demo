@@ -1,8 +1,7 @@
 ---
-title: Windows環境設定
+title: About
 lang: jp
 ---
+# About
 
 <EditMetaInfo/>
-
-

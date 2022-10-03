@@ -61,6 +61,6 @@ srcフォルダ配下はページごとに作成
 
 ### Next:開発環境の構築方法
 
-- [Windowsの設定方法](setting/setting-windows.md)
-- [Macの設定方法](setting/setting-mac.md)
+- [Windowsの設定方法](setting/windows.md)
+- [Macの設定方法](setting/mac.md)
 

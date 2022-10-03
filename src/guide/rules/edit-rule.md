@@ -1,9 +1,6 @@
 ---
 title: 記載ルール
 lang: jp
-meta:
-    - last_edit_name: Miyaji
-    - last_edit_date : 2022/09/28
 ---
 # 編集ルール
 <EditMetaInfo/>
@@ -61,6 +58,8 @@ meta:
 ### 図解記法
 mermaid.jsを利用して作成
 
+#### シーケンス図
+
 ```mermaidjs
 sequenceDiagram
   Alice->John: Hello John, how are you?
@@ -68,6 +67,52 @@ sequenceDiagram
     John-->Alice: Great!
   end
 ```
+
+#### フローチャート
+
+```mermaidjs
+
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+
+```
+
+#### ガントチャート
+```mermaidjs
+gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+excludes weekdays 2014-01-10
+
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2               :         des4, after des3, 5d
+
+```
+
+
+#### gitGraph
+
+```mermaidjs
+    gitGraph
+       commit
+       commit
+       branch develop
+       commit
+       commit
+       commit
+       checkout main
+       commit
+       commit
+
+```
+
+
 
 
 ### vue独特の記法の利用
@@ -82,16 +127,6 @@ sequenceDiagram
 <span v-for="i in 3">
 - {{ i }}回<br>
 </span>
-
-
-#### ページのMetaデータを利用する
-この機能を利用してヘッダー文字列を作成している
-
-$page.title: {{ $frontmatter.title }}
-
-$page.lang: {{ $lang }}
-
-$page.meta: {{ $frontmatter.meta[0].last_edit_name }}
 
 
 

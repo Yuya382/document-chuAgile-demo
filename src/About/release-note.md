@@ -1,10 +1,9 @@
 ---
-title: QA-README
+title: release-note
 lang: jp
-
 ---
 
-# QA
+# release-note
 
 <!-- 下の表は編集不要 -->
 
