@@ -12,27 +12,16 @@ module.exports = {
     ["meta", { name: "theme-color", content: "#ff0000" }],
     ["link", { rel: "stylesheet", href: "/main.css" }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css' }],
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
-
-  locales: {
-    "/": {
-      lang: "ja",
-      title: "中ゼミアジャイル デモサイト-Local-",
-      description: " Description",
-      head: [
-        ["meta", { property: "og:title", content: "中ゼミアジャイル デモサイト-Local-" }],
-        // ["link", { rel: "stylesheet", href: "/main.css" }],
-        ["meta", { property: "og:locale", content: "ja" }],
-        ["meta", { property: "og:type", content: "website" }]
-      ],
-    },
-  },
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
   lang: "ja",
+  theme: 'cool',
   title: "中ゼミアジャイル ドキュメントデモサイト",
   description: 'demo-site',
   dest: 'docs/',
@@ -44,7 +33,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: 'https://github.com/Yuya382/document-chuAgile-demo.git',
+    repo: 'https://github.com/Yuya382/document-chuAgile-demo',
     search: false,
     editLinks: true, // footerにページ編集用リンクをつける
     editLinkText: 'このページをgithubで編集',// 編集用リンクのテキスト
@@ -179,6 +168,11 @@ module.exports = {
    * 
    */
   configureWebpack: {
+    // config: {
+    //   output: {
+    //     publicPath: 'https://yuya382.github.io/',
+    //   }
+    // },
     resolve: {
       //alias設定
       alias: {
@@ -186,7 +180,22 @@ module.exports = {
       }
     }
   },
+  configureWebpack: (config) => {
+    // 1) xserver で確認したい場合
+    config.output.publicPath = 'https://yuya382.github.io/document-chuAgile-demo/'
+
+    // 2) ローカルの環境で確認したい場合
+    // const path = require('path')
+    // config.output.publicPath = path.resolve(__dirname, 'dist')
+  },
+
   markdown: {
+    extendMarkdown: md => {
+      md.set({ html: true })
+      md.use(require('markdown-it-katex'))
+      md.use(require('markdown-it-plantuml'))
+      md.use(require('markdown-it-admonition'))
+    },
     plugins: {
       'multimd-table': {
         rowspan: true,
