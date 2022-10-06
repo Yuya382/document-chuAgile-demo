@@ -1,5 +1,7 @@
 const { description } = require('../../package')
 
+require('dotenv').config();
+
 module.exports = {
   /**
    * Extra tags to be injected to the page HTML `<head>`
@@ -164,29 +166,10 @@ module.exports = {
     },
   ],
 
-  /**
-   * 
-   */
-  configureWebpack: {
-    // config: {
-    //   output: {
-    //     publicPath: 'https://yuya382.github.io/',
-    //   }
-    // },
-    resolve: {
-      //alias設定
-      alias: {
-        '@': '../.vuepress/public'
-      }
-    }
-  },
   configureWebpack: (config) => {
-    // 1) xserver で確認したい場合
-    config.output.publicPath = 'https://yuya382.github.io/document-chuAgile-demo/'
-
-    // 2) ローカルの環境で確認したい場合
-    // const path = require('path')
-    // config.output.publicPath = path.resolve(__dirname, 'dist')
+    // config.output.publicPath = 'https://yuya382.github.io/document-chuAgile-demo/'
+    config.output.publicPath = './'
+    config.resolve.alias['@'] = '../.vuepress/public'
   },
 
   markdown: {
