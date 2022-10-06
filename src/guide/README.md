@@ -25,7 +25,6 @@ srcフォルダ配下はページごとに作成
 
 ```
 .
-├── .DS_Store
 ├── .vuepress/
 │  ├── components/
 │  ├── config.js
@@ -53,14 +52,8 @@ srcフォルダ配下はページごとに作成
 | /Log/         |         D          | ログ設定・BigQueryのテーブル構造・データを抜き出す時のサンプルSQLを参照できます |
 | /terminology/ |         D          | 用語集・PJでの独自ワードを保存します                                            |
 | /QA/          |         D          | 質問があったことを随時、追加します                                              |
-|               |         D          |                                                                                 |
-|               |         D          |                                                                                 |
+| About         |         D          | リリースノートを記載                                                            |
 | Repository    |         L          | 設定したリポジトリに遷移します                                                  |
 
 
-
-### Next:開発環境の構築方法
-
-- [Windowsの設定方法](setting/windows.md)
-- [Macの設定方法](setting/mac.md)
 

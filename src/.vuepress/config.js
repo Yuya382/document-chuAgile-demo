@@ -90,14 +90,16 @@ module.exports = {
             'setting/environment',
             'setting/windows',
             'setting/mac',
+            'setting/setting-add-category'
           ]
         },
         {
           title: 'ルール',
           collapsable: false,
           children: [
-            'rules/commit-rule',
+            'rules/script-rule.md',
             'rules/edit-rule',
+
           ]
         }
       ],
@@ -133,7 +135,7 @@ module.exports = {
           title: 'About',
           collapsable: false,//True＝dropDownでまとめられる
           children: [
-            'about',
+            '',
             'release-note',
           ]
         },
@@ -166,8 +168,8 @@ module.exports = {
   ],
 
   configureWebpack: (config) => {
-    // config.output.publicPath = 'https://yuya382.github.io/document-chuAgile-demo/'
-    config.output.publicPath = './'
+    config.output.publicPath = 'https://yuya382.github.io/document-chuAgile-demo/'
+    // config.output.publicPath = './'
     config.resolve.alias['@'] = '../.vuepress/public'
   },
 

@@ -9,3 +9,12 @@ lang: jp
 
 <EditMetaInfo/>
 <!-- ここから編集 -->
+
+
+## 1.2.0
+
+!!! tip New Point
+
+1.　AAAAが追加されました
+
+2.　BBBBのバグが修正されました

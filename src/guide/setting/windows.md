@@ -6,3 +6,4 @@ lang: jp
 <EditMetaInfo/>
 
 
+<HelpEdit/>
