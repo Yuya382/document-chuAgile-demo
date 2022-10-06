@@ -12,7 +12,6 @@ module.exports = {
     ["meta", { property: "og:title", content: "中ゼミアジャイル デモサイト" }],
     ["link", { rel: "icon", size: "192x192", href: "/logo.png" }],
     ["meta", { name: "theme-color", content: "#ff0000" }],
-    ["link", { rel: "stylesheet", href: "/main.css" }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css' }],
     ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }],
@@ -131,7 +130,7 @@ module.exports = {
       ],
       '/About/': [
         {
-          title: '',
+          title: 'About',
           collapsable: false,//True＝dropDownでまとめられる
           children: [
             'about',
@@ -167,8 +166,8 @@ module.exports = {
   ],
 
   configureWebpack: (config) => {
-    config.output.publicPath = 'https://yuya382.github.io/document-chuAgile-demo/'
-    // config.output.publicPath = './'
+    // config.output.publicPath = 'https://yuya382.github.io/document-chuAgile-demo/'
+    config.output.publicPath = './'
     config.resolve.alias['@'] = '../.vuepress/public'
   },
 
