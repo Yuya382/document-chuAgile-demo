@@ -13,5 +13,3 @@ features:
   details: Feature 3 Description
 footer: Made by  with Miyaji and Tanaka
 ---
-
-{{process.env.VUE_APP_MODE }}
