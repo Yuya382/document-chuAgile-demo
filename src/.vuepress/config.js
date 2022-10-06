@@ -167,8 +167,8 @@ module.exports = {
   ],
 
   configureWebpack: (config) => {
-    // config.output.publicPath = 'https://yuya382.github.io/document-chuAgile-demo/'
-    config.output.publicPath = './'
+    config.output.publicPath = 'https://yuya382.github.io/document-chuAgile-demo/'
+    // config.output.publicPath = './'
     config.resolve.alias['@'] = '../.vuepress/public'
   },
 
