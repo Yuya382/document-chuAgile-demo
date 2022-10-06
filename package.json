@@ -9,7 +9,7 @@
     "prebuild": "rm -rf docs/",
     "build": "vuepress build src",
     "predeploy": "cd src",
-    "deploy": "git add . && git commit -m 'deploy' && git push",
+    "deploy": "./sh/deploy.sh",
     "postdeploy": "cd .."
   },
   "devDependencies": {
