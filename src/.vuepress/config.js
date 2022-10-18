@@ -9,7 +9,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ["meta", { property: "og:title", content: "中ゼミアジャイル デモサイト" }],
+    ["meta", { property: "og:title", content: "VuePressデモサイト" }],
     ["link", { rel: "icon", size: "192x192", href: "/logo.png" }],
     ["meta", { name: "theme-color", content: "#ff0000" }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
@@ -23,10 +23,10 @@ module.exports = {
    */
   lang: "ja",
   theme: 'cool',
-  title: "中ゼミアジャイル ドキュメントデモサイト",
+  title: "VuePressデモサイト",
   description: 'demo-site',
   dest: 'docs/',
-  base: '/document-chuAgile-demo/',
+  base: '/document-vuepress-demo/',
 
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
@@ -34,7 +34,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: 'https://github.com/Yuya382/document-chuAgile-demo',
+    repo: 'https://github.com/Yuya382/document-vuepress-demo',
     search: false,
     editLinks: true, // footerにページ編集用リンクをつける
     editLinkText: 'このページをgithubで編集',// 編集用リンクのテキスト
@@ -168,7 +168,7 @@ module.exports = {
   ],
 
   configureWebpack: (config) => {
-    config.output.publicPath = 'https://yuya382.github.io/document-chuAgile-demo/'
+    config.output.publicPath = 'https://yuya382.github.io/document-vuepress-demo/'
     // config.output.publicPath = './'
     config.resolve.alias['@'] = '../.vuepress/public'
   },
