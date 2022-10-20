@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: '/logo.png'
+heroImage: 'logo.png'
 tagline: ほげほげ
 actionText: Quick Start(actionLink先に飛ばす) →
 actionLink: /guide/

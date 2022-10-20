@@ -26,7 +26,7 @@ module.exports = {
   title: "VuePressデモサイト",
   description: 'demo-site',
   dest: 'docs/',
-  base: '/document-vuepress-demo/',
+  base: '/',
 
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
@@ -168,7 +168,7 @@ module.exports = {
   ],
 
   configureWebpack: (config) => {
-    config.output.publicPath = 'https://yuya382.github.io/document-vuepress-demo/'
+    // config.output.publicPath = 'https://yuya382.github.io/document-vuepress-demo/'
     // config.output.publicPath = './'
     config.resolve.alias['@'] = '../.vuepress/public'
   },

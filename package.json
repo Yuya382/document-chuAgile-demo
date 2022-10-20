@@ -8,7 +8,9 @@
     "dev": "vuepress dev src",
     "prebuild": "rm -rf docs/",
     "build": "vuepress build src",
-    "deploy": "./sh/deploy.sh"
+    "production-deploy": "./sh/production-deploy.sh",
+    "staging-deploy": "./sh/staging-deploy.sh",
+    "serve": "./sh/serve.sh"
   },
   "devDependencies": {
     "@renovamen/vuepress-plugin-mermaid": "^0.3.0",
